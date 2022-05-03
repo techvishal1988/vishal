@@ -1,1 +1,2 @@
 # vishal
+yum install gcc

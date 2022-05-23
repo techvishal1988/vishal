@@ -1,18 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: vishal_myapp-argo-application
+  name: myapp-argo-application
   namespace: argocd
 spec:
   project: default
 
   source:
-    repoURL: https://github.com/techvishal1988/
+    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
     targetRevision: HEAD
-    path: vishal
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
-    namespace: vishal_myapp
+    namespace: myapp
 
   syncPolicy:
     syncOptions:

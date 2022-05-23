@@ -7,9 +7,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/techvishal1988/vishal.git
+    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
     targetRevision: HEAD
-    path: techvishal1988
+    path: dev
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
